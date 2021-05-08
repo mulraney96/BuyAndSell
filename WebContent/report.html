@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>15517783</title>
+</head>
+<body>
+
+
+<h1>The Application</h1>
+<h1>Joseph Mulraney 15517783</h1>
+<p> The application allows for DVDs to be bought and sold. There is an admin login: username=admin password=admin
+<br>If the password or email is entered incorrectly an error message will appear. If not it beings the user
+to the home screen, here it is possible to register and ad, search the item library and place bids, the user can also
+log in to another account or register another account.
+<br>The applicaiton uses an Ajax method to update the library when searching for specific items, and when validating the 
+login info
+<br>The session has two attributes, the most important one being the user id, this is useful when registering a new item
+<br> as it gets the seller identity through the session. This is used as a foreign key between the
+<br> item and user tables.
+<br>
+<br>
+
+
+
+
+
+
+
+
+<h1>The SQL code used</h1>
+<p>There are 2 tables used in this assignment, they are mulraneyUsers and mulraneyItems
+	The code can be seen here</p>
+<br>
+<p>CREATE TABLE mulraneyItems(<br>
+			 itemID INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1), 			 
+			 category VARCHAR(50) NOT NULL, itemName VARCHAR(255) NOT NULL, 
+			 <br>itemDescription VARCHAR(500), sellerID int, highestBid int, 
+			 <br>PRIMARY KEY(itemID), 
+			 <br>FOREIGN KEY (sellerID) REFERENCES mulraneyUsers(id))
+ </p>
+ <br>
+ <p>
+ CREATE TABLE mulraneyUsers(
+ <br> id INTEGER GENERATED ALWAYs as IDENTITY(START with 1 INCREMENT by 1),
+ <br> email VARCHAR(255),
+ <br> password VARCHAR(255),
+ <br> firstname VARCHAR(255),
+ <br> surname VARCHAR(255),
+ <br> PRIMARY KEY(id))
+ </p>
+</body>
+</html>

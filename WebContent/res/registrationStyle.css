@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+
+body{
+	margin:0;
+	padding:0;
+	background: #fff;
+	color: #fff;
+	font-family: sans-serif;
+	background-size: cover;
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.registerbox{
+	width: 400px;
+	height: 450px;
+	border: 10px;
+	background: darkslateblue;
+	text-align: left;
+	color: #fff;
+	top: 40px;
+	left: 40px;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 5px 10px;
+}
+
+.registerbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.registerbox input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.registerbox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 70px;
+	background: #fff;
+	color: darkslateblue;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.registerbox input[type="submit"]:hoover{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+

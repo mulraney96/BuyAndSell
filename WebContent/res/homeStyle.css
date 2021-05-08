@@ -1,0 +1,144 @@
+@charset "ISO-8859-1";
+body{
+	font-family: sans-serif;
+}
+
+
+header{
+	background: darkslateblue;
+	background-position: center center;
+	width: cover;
+	margin:0;
+	height: 15vh;
+	background-size: cover;
+	padding:0;
+	color:#fff;
+	
+}
+
+.wrapper{
+	width: 1170px;
+	margin: auto;
+}
+
+.heading h1{
+	float: left;
+	margin: 30px -20px;
+	font-size: 30px;
+}
+
+.nav-area{
+	float: right;
+	list-style: none;
+	margin-left: 30px;
+	margin-top: 40px;
+}
+
+.nav-area li{
+	display: inline-block;
+}
+
+.nav-area li a{
+	color: #fff;
+	padding: 5px 20px;
+	font-size: 20px;
+}
+
+.nav-area li a:hover{
+	background: #fff;
+	color: #333;
+}
+
+.table-wrapper{
+	margin: 10px 70px 70px;
+	box-shadow: 0px 35px 50px rgba(0, 0,0, 0.2);
+}
+
+.itemList{
+	border-color: #7653a6;
+	font-size: 16px;
+	font-weight: normal;
+	border: 2px ;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+	white-space: nowrap;
+	background-color: white;
+}
+
+.middle{
+	text-align: center;
+}
+
+.middle p{
+	font-weight: bold;
+	color: darkslateblue;
+}
+
+.middle h4{
+	font-weight: #200;
+	color: #000;
+	background: red;
+	
+}
+
+.middle input[type="text"], input[type="submit"]{
+	border: none;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: darkslateblue;
+    outline: none;
+    height: 40px;
+    color: #555;
+    font-size: 16px;
+}
+
+.itemList tr td, .itemList th {
+	text-align: center;
+	padding: 8px;
+}
+
+.itemList tr td{
+	border-right: 1px solid #46467d;
+	font-size: 14px;
+}
+
+.itemList tr th{
+	color: #fffff;
+	background: 4FC3A1;
+}
+
+.itemList tr:nth-child(odd){
+	color: #7653a6;
+	background: #ffffff;
+}
+
+
+.itemList tr:nth-child(even){
+	color: #fff;
+	background: #7653a6;
+}
+
+.itemList input[type="number"]{
+	border: none;
+	border-radius:0px;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+    height: 30px;
+    font-size: 16px;
+}
+
+.itemList input[type=submit]{
+	border: 1px solid #7652a6;
+    outline: none;
+    height: 30px;
+    background: #fff;
+    color: darkslateblue;
+    font-size: 10px;
+    border-radius: 25px;
+}
+
+
+
+

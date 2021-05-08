@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Joe's Buy & Sell</title>
+<link rel="stylesheet" type="text/css" href="res/advertismentStyle.css">
+</head>
+
+<body>
+	<div class="registerbox">
+		<h1>Place an Advertisement Here<br>Please fill in the forms below</h1>
+		<form method="POST" action="/BuyAndSell/SellServlet" name="sellform">
+			<fieldset>
+				<p>Item Category:</p>
+				<select id='category' name="category">
+					<option value = "Horror">Horror</option>
+					<option value = "RomCom">RomCom</option>
+					<option value = "Thriller">Thriller</option>
+					<option value = "Comedy">Comedy</option>
+					<option value = "Drama">Drama</option>
+					<option value = "Childrens">Childrens</option>
+					<option value = "SciFi">SciFi</option>
+					<option value = "Action">Action</option>
+					<option value = "Documentary">Documentary</option>
+					<option value = "Romance">Romance</option>
+					<option value = "Animation">Animation</option>
+				</select>
+				<p>Item Name:</p>
+				<input type="text" name="itemName" placeholder="50"/>
+			</fieldset>
+			<p>Description:</p>
+			<textarea id = "itemDescription" name="itemDescription" rows="3" cols="80" placeholder="Decribe Item in 500 characters or less">
+			</textarea> 
+
+			<br>
+			<br>
+			<input type="submit" name="submit" value="Register"/>
+		</form>
+	</div>
+
+</body>
+</html>

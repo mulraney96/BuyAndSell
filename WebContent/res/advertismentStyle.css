@@ -1,0 +1,70 @@
+@charset "ISO-8859-1";
+
+
+body{
+	margin:0;
+	padding:0;
+	background: url(images/movieCollage.jpg);
+	color: #fff;
+	font-family: sans-serif;
+	background-size: cover;
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.registerbox{
+	width: 665px;
+	height: 450px;
+	border: 10px;
+	background: darkslateblue;
+	text-align: left;
+	color: #fff;
+	top: 40px;
+	left: 40px;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 5px 10px;
+}
+
+.registerbox p{
+	margin: 10 10;
+	padding: 10;
+	font-weight: bold;
+}
+
+.registerbox input[type="text"], select{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.registerbox select option{
+	background: darkslateblue;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.registerbox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 100px;
+	background: #fff;
+	color: darkslateblue;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.registerbox input[type="submit"]:hoover{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
